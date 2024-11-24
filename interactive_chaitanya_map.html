@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_cac5ac6e78fc04520f811c79c29bc02d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_cac5ac6e78fc04520f811c79c29bc02d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_cac5ac6e78fc04520f811c79c29bc02d = L.map(
+                "map_cac5ac6e78fc04520f811c79c29bc02d",
+                {
+                    center: [23.0, 88.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_cf1d3b8af67e6edb2215f3313b2495aa = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_cf1d3b8af67e6edb2215f3313b2495aa.addTo(map_cac5ac6e78fc04520f811c79c29bc02d);
+        
+    
+            var marker_cluster_002e950655d251c1c1c246ee20f3bc96 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_44509299d4c0a0f2ab4289985d2d2a00 = L.marker(
+                [23.4109827507381, 88.36992523728912],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_94016a38b860bc27f59daec2b1fd1cb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44509299d4c0a0f2ab4289985d2d2a00.setIcon(icon_94016a38b860bc27f59daec2b1fd1cb0);
+        
+    
+        var popup_16c9d3193e19dbba86a035623f4c7d0c = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_1139816b775d0a0741c8aa8345781531 = $(`<div id="html_1139816b775d0a0741c8aa8345781531" style="width: 100.0%; height: 100.0%;"><strong>Poramatala</strong></div>`)[0];
+                popup_16c9d3193e19dbba86a035623f4c7d0c.setContent(html_1139816b775d0a0741c8aa8345781531);
+            
+        
+
+        marker_44509299d4c0a0f2ab4289985d2d2a00.bindPopup(popup_16c9d3193e19dbba86a035623f4c7d0c)
+        ;
+
+        
+    
+    
+            marker_44509299d4c0a0f2ab4289985d2d2a00.bindTooltip(
+                `<div>
+                     Poramatala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9a8505ea0b2e3f8651d71688f9282dfa = L.marker(
+                [23.409289292954742, 88.37232849651893],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_6de308bd0d55a844d7385a8a26945166 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a8505ea0b2e3f8651d71688f9282dfa.setIcon(icon_6de308bd0d55a844d7385a8a26945166);
+        
+    
+        var popup_dc42f2a377ccf09b5cecc7be9c9d54b3 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_435b4abc4d3696b6d891e16dbb3503ab = $(`<div id="html_435b4abc4d3696b6d891e16dbb3503ab" style="width: 100.0%; height: 100.0%;"><strong>Sonar Gouranga Temple</strong></div>`)[0];
+                popup_dc42f2a377ccf09b5cecc7be9c9d54b3.setContent(html_435b4abc4d3696b6d891e16dbb3503ab);
+            
+        
+
+        marker_9a8505ea0b2e3f8651d71688f9282dfa.bindPopup(popup_dc42f2a377ccf09b5cecc7be9c9d54b3)
+        ;
+
+        
+    
+    
+            marker_9a8505ea0b2e3f8651d71688f9282dfa.bindTooltip(
+                `<div>
+                     Sonar Gouranga Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b08cc0ea759fa3918f706d6b26f58941 = L.marker(
+                [23.448788863629407, 88.40329641845587],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_099b6a0f9119a16cd1db6935efa66156 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b08cc0ea759fa3918f706d6b26f58941.setIcon(icon_099b6a0f9119a16cd1db6935efa66156);
+        
+    
+        var popup_e66d359290a02edbca6d2a86c01bb9fe = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_65aff866c93abb0126f2347abd86a073 = $(`<div id="html_65aff866c93abb0126f2347abd86a073" style="width: 100.0%; height: 100.0%;"><strong>Ballal Dhipi</strong></div>`)[0];
+                popup_e66d359290a02edbca6d2a86c01bb9fe.setContent(html_65aff866c93abb0126f2347abd86a073);
+            
+        
+
+        marker_b08cc0ea759fa3918f706d6b26f58941.bindPopup(popup_e66d359290a02edbca6d2a86c01bb9fe)
+        ;
+
+        
+    
+    
+            marker_b08cc0ea759fa3918f706d6b26f58941.bindTooltip(
+                `<div>
+                     Ballal Dhipi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b176bc1f590923ed9db6f852169963dc = L.marker(
+                [23.399293136292595, 88.36297015573102],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_9486ef9cf08e57937987df2ec6f4ef95 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b176bc1f590923ed9db6f852169963dc.setIcon(icon_9486ef9cf08e57937987df2ec6f4ef95);
+        
+    
+        var popup_33f0bf4ec215be8cca65b6203b408fc8 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_c1dd6200234dcce871871b57df11de3b = $(`<div id="html_c1dd6200234dcce871871b57df11de3b" style="width: 100.0%; height: 100.0%;"><strong>Sri Devananda Gaudiya Math</strong></div>`)[0];
+                popup_33f0bf4ec215be8cca65b6203b408fc8.setContent(html_c1dd6200234dcce871871b57df11de3b);
+            
+        
+
+        marker_b176bc1f590923ed9db6f852169963dc.bindPopup(popup_33f0bf4ec215be8cca65b6203b408fc8)
+        ;
+
+        
+    
+    
+            marker_b176bc1f590923ed9db6f852169963dc.bindTooltip(
+                `<div>
+                     Sri Devananda Gaudiya Math
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd37025c732c3257c07e213e8634f5a0 = L.marker(
+                [23.391283584096442, 88.3653177763893],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_86184e340d24303f2a0c3a591d6a49af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd37025c732c3257c07e213e8634f5a0.setIcon(icon_86184e340d24303f2a0c3a591d6a49af);
+        
+    
+        var popup_3919c926e0a9047d29138abd73257291 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_239b8dc0990b95aa13a240b4d4721137 = $(`<div id="html_239b8dc0990b95aa13a240b4d4721137" style="width: 100.0%; height: 100.0%;"><strong>Sri Chaitanya Saraswat Math (Jal Mandir)</strong></div>`)[0];
+                popup_3919c926e0a9047d29138abd73257291.setContent(html_239b8dc0990b95aa13a240b4d4721137);
+            
+        
+
+        marker_bd37025c732c3257c07e213e8634f5a0.bindPopup(popup_3919c926e0a9047d29138abd73257291)
+        ;
+
+        
+    
+    
+            marker_bd37025c732c3257c07e213e8634f5a0.bindTooltip(
+                `<div>
+                     Sri Chaitanya Saraswat Math (Jal Mandir)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae0139b76033e57c9888ff133b0a04cc = L.marker(
+                [23.40791614064054, 88.37303237143321],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_02ab86e242edd5334ab90f93be7bd943 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ae0139b76033e57c9888ff133b0a04cc.setIcon(icon_02ab86e242edd5334ab90f93be7bd943);
+        
+    
+        var popup_3a242a4e136a350270c98c6b9f04e133 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_33692847e820e1e81cae91479eafc2a0 = $(`<div id="html_33692847e820e1e81cae91479eafc2a0" style="width: 100.0%; height: 100.0%;"><strong>Sri Sri Samaj Bari Ashram</strong></div>`)[0];
+                popup_3a242a4e136a350270c98c6b9f04e133.setContent(html_33692847e820e1e81cae91479eafc2a0);
+            
+        
+
+        marker_ae0139b76033e57c9888ff133b0a04cc.bindPopup(popup_3a242a4e136a350270c98c6b9f04e133)
+        ;
+
+        
+    
+    
+            marker_ae0139b76033e57c9888ff133b0a04cc.bindTooltip(
+                `<div>
+                     Sri Sri Samaj Bari Ashram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_39b96b3fe77e9d58938374f31733ec60 = L.marker(
+                [23.411932835637664, 88.3766556798282],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_fd628a74c6213cd4931b932922d8fa61 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_39b96b3fe77e9d58938374f31733ec60.setIcon(icon_fd628a74c6213cd4931b932922d8fa61);
+        
+    
+        var popup_9b2a3813a1e07438e38ef1d119fabcf0 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_ecde44914db79b680b405ea7e0ace24f = $(`<div id="html_ecde44914db79b680b405ea7e0ace24f" style="width: 100.0%; height: 100.0%;"><strong>Radharani Temple</strong></div>`)[0];
+                popup_9b2a3813a1e07438e38ef1d119fabcf0.setContent(html_ecde44914db79b680b405ea7e0ace24f);
+            
+        
+
+        marker_39b96b3fe77e9d58938374f31733ec60.bindPopup(popup_9b2a3813a1e07438e38ef1d119fabcf0)
+        ;
+
+        
+    
+    
+            marker_39b96b3fe77e9d58938374f31733ec60.bindTooltip(
+                `<div>
+                     Radharani Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6de995f9b71be39c9e505b77deacd9f8 = L.marker(
+                [23.412798770793497, 88.36977059887356],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_27ef76066bff0c76dca6ad6c70c3b1b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6de995f9b71be39c9e505b77deacd9f8.setIcon(icon_27ef76066bff0c76dca6ad6c70c3b1b9);
+        
+    
+        var popup_3e6a56cb0cb5dc681c9ecbd5415241fd = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_bd9e2730c64beeaf4a0a22010b0df2a3 = $(`<div id="html_bd9e2730c64beeaf4a0a22010b0df2a3" style="width: 100.0%; height: 100.0%;"><strong>Dhameswar Mahaprabhu Temple</strong></div>`)[0];
+                popup_3e6a56cb0cb5dc681c9ecbd5415241fd.setContent(html_bd9e2730c64beeaf4a0a22010b0df2a3);
+            
+        
+
+        marker_6de995f9b71be39c9e505b77deacd9f8.bindPopup(popup_3e6a56cb0cb5dc681c9ecbd5415241fd)
+        ;
+
+        
+    
+    
+            marker_6de995f9b71be39c9e505b77deacd9f8.bindTooltip(
+                `<div>
+                     Dhameswar Mahaprabhu Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3837cab1a09fe86a5b30ddea8e5b6bb = L.marker(
+                [23.425671603005647, 88.37125561293419],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_2ba2235daf15c3249cdecc7a2bd5eeac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3837cab1a09fe86a5b30ddea8e5b6bb.setIcon(icon_2ba2235daf15c3249cdecc7a2bd5eeac);
+        
+    
+        var popup_f4f9ff9ffe31aaba9ba7eb2fcc6f2389 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_d202a867691f39ad42e6d6bddab77dd3 = $(`<div id="html_d202a867691f39ad42e6d6bddab77dd3" style="width: 100.0%; height: 100.0%;"><strong>Sree Sree Gauranga Mahaprabhu Janmasthan Ashram</strong></div>`)[0];
+                popup_f4f9ff9ffe31aaba9ba7eb2fcc6f2389.setContent(html_d202a867691f39ad42e6d6bddab77dd3);
+            
+        
+
+        marker_c3837cab1a09fe86a5b30ddea8e5b6bb.bindPopup(popup_f4f9ff9ffe31aaba9ba7eb2fcc6f2389)
+        ;
+
+        
+    
+    
+            marker_c3837cab1a09fe86a5b30ddea8e5b6bb.bindTooltip(
+                `<div>
+                     Sree Sree Gauranga Mahaprabhu Janmasthan Ashram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_255e0ce660645484904eacf98f8e6120 = L.marker(
+                [23.429920199430686, 88.37221247371691],
+                {}
+            ).addTo(marker_cluster_002e950655d251c1c1c246ee20f3bc96);
+        
+    
+            var icon_0669700f92fdde287a1f365850bd972e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_255e0ce660645484904eacf98f8e6120.setIcon(icon_0669700f92fdde287a1f365850bd972e);
+        
+    
+        var popup_39bccb0c044500d9e4d6ad4a935b8587 = L.popup({"maxWidth": 250});
+
+        
+            
+                var html_58a7bebc354258e75c3994df1a4df76f = $(`<div id="html_58a7bebc354258e75c3994df1a4df76f" style="width: 100.0%; height: 100.0%;"><strong>Narahari Dham Ashram</strong></div>`)[0];
+                popup_39bccb0c044500d9e4d6ad4a935b8587.setContent(html_58a7bebc354258e75c3994df1a4df76f);
+            
+        
+
+        marker_255e0ce660645484904eacf98f8e6120.bindPopup(popup_39bccb0c044500d9e4d6ad4a935b8587)
+        ;
+
+        
+    
+    
+            marker_255e0ce660645484904eacf98f8e6120.bindTooltip(
+                `<div>
+                     Narahari Dham Ashram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_002e950655d251c1c1c246ee20f3bc96.addTo(map_cac5ac6e78fc04520f811c79c29bc02d);
+        
+</script>
+</html>

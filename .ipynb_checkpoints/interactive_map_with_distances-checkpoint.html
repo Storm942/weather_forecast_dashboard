@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_94f1bcaaa4cfc9584cf2702b4ff05170 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_94f1bcaaa4cfc9584cf2702b4ff05170" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_94f1bcaaa4cfc9584cf2702b4ff05170 = L.map(
+                "map_94f1bcaaa4cfc9584cf2702b4ff05170",
+                {
+                    center: [23.0, 88.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1b7043b925ca6b3412ed0e410cc88a17 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1b7043b925ca6b3412ed0e410cc88a17.addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var marker_cluster_a1726009f776e9ebde93bf6914b0224a = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_7b5c66c86941ab502743695a1812718c = L.marker(
+                [23.4109827507381, 88.36992523728912],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_0665345fb2866d69d6055568c443d65f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b5c66c86941ab502743695a1812718c.setIcon(icon_0665345fb2866d69d6055568c443d65f);
+        
+    
+        var popup_6fba01934dc93810845fdbe411fcecfa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5c9da32fc59b962155d52ec82d686211 = $(`<div id="html_5c9da32fc59b962155d52ec82d686211" style="width: 100.0%; height: 100.0%;"><strong>Poramatala</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 0.57 km</div>`)[0];
+                popup_6fba01934dc93810845fdbe411fcecfa.setContent(html_5c9da32fc59b962155d52ec82d686211);
+            
+        
+
+        marker_7b5c66c86941ab502743695a1812718c.bindPopup(popup_6fba01934dc93810845fdbe411fcecfa)
+        ;
+
+        
+    
+    
+            marker_7b5c66c86941ab502743695a1812718c.bindTooltip(
+                `<div>
+                     Poramatala
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_00202aa778774c89aef4201f4cb980fc = L.marker(
+                [23.409289292954742, 88.37232849651893],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_189bc8cdba2d609dd13aa8b2f868d6c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_00202aa778774c89aef4201f4cb980fc.setIcon(icon_189bc8cdba2d609dd13aa8b2f868d6c7);
+        
+    
+        var popup_c9c3fe76a8879571f0429759cb6c4a7a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_7d8c7030746008796526baea845317db = $(`<div id="html_7d8c7030746008796526baea845317db" style="width: 100.0%; height: 100.0%;"><strong>Sonar Gouranga Temple</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 0.56 km</div>`)[0];
+                popup_c9c3fe76a8879571f0429759cb6c4a7a.setContent(html_7d8c7030746008796526baea845317db);
+            
+        
+
+        marker_00202aa778774c89aef4201f4cb980fc.bindPopup(popup_c9c3fe76a8879571f0429759cb6c4a7a)
+        ;
+
+        
+    
+    
+            marker_00202aa778774c89aef4201f4cb980fc.bindTooltip(
+                `<div>
+                     Sonar Gouranga Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f499155a6fac4167c47141afde16f845 = L.marker(
+                [23.448788863629407, 88.40329641845587],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_27044d7dfe65bab9724a6f78bc52bf8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f499155a6fac4167c47141afde16f845.setIcon(icon_27044d7dfe65bab9724a6f78bc52bf8a);
+        
+    
+        var popup_4105c59d44913c81db80a15993483cec = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_779649b4283701b614a0dd0ce694acd5 = $(`<div id="html_779649b4283701b614a0dd0ce694acd5" style="width: 100.0%; height: 100.0%;"><strong>Ballal Dhipi</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 5.94 km</div>`)[0];
+                popup_4105c59d44913c81db80a15993483cec.setContent(html_779649b4283701b614a0dd0ce694acd5);
+            
+        
+
+        marker_f499155a6fac4167c47141afde16f845.bindPopup(popup_4105c59d44913c81db80a15993483cec)
+        ;
+
+        
+    
+    
+            marker_f499155a6fac4167c47141afde16f845.bindTooltip(
+                `<div>
+                     Ballal Dhipi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_334b62fec6d00ae2a9f7edabd9b37287 = L.marker(
+                [23.399293136292595, 88.36297015573102],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_1aa2e0ebef5784e5e23a11f94ce1193f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_334b62fec6d00ae2a9f7edabd9b37287.setIcon(icon_1aa2e0ebef5784e5e23a11f94ce1193f);
+        
+    
+        var popup_2dc6e13100fbf5fd67ac0b88b28e6bb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_445648e7174ace7b093cdf64be013f64 = $(`<div id="html_445648e7174ace7b093cdf64be013f64" style="width: 100.0%; height: 100.0%;"><strong>Sri Devananda Gaudiya Math</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 0.92 km</div>`)[0];
+                popup_2dc6e13100fbf5fd67ac0b88b28e6bb8.setContent(html_445648e7174ace7b093cdf64be013f64);
+            
+        
+
+        marker_334b62fec6d00ae2a9f7edabd9b37287.bindPopup(popup_2dc6e13100fbf5fd67ac0b88b28e6bb8)
+        ;
+
+        
+    
+    
+            marker_334b62fec6d00ae2a9f7edabd9b37287.bindTooltip(
+                `<div>
+                     Sri Devananda Gaudiya Math
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3ff171e0b4be7a2b468035e0520f66cb = L.marker(
+                [23.391283584096442, 88.3653177763893],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_12c7e98c4bbba73477aad9a0537fdd0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3ff171e0b4be7a2b468035e0520f66cb.setIcon(icon_12c7e98c4bbba73477aad9a0537fdd0f);
+        
+    
+        var popup_49012207428626d70620d4b1ed47f955 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e2e4c46c4db3e572016b64be2ce5113a = $(`<div id="html_e2e4c46c4db3e572016b64be2ce5113a" style="width: 100.0%; height: 100.0%;"><strong>Sri Chaitanya Saraswat Math (Jal Mandir)</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 1.67 km</div>`)[0];
+                popup_49012207428626d70620d4b1ed47f955.setContent(html_e2e4c46c4db3e572016b64be2ce5113a);
+            
+        
+
+        marker_3ff171e0b4be7a2b468035e0520f66cb.bindPopup(popup_49012207428626d70620d4b1ed47f955)
+        ;
+
+        
+    
+    
+            marker_3ff171e0b4be7a2b468035e0520f66cb.bindTooltip(
+                `<div>
+                     Sri Chaitanya Saraswat Math (Jal Mandir)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e78249782214dda5034fa5d833af1651 = L.marker(
+                [23.40791614064054, 88.37303237143321],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_5300a1b15c07c1817712556dc61519f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e78249782214dda5034fa5d833af1651.setIcon(icon_5300a1b15c07c1817712556dc61519f2);
+        
+    
+        var popup_e39be377fca6a1e986af694d1c179058 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8dcff04ddb943173c02e667670c87eeb = $(`<div id="html_8dcff04ddb943173c02e667670c87eeb" style="width: 100.0%; height: 100.0%;"><strong>Sri Sri Samaj Bari Ashram</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 0.55 km</div>`)[0];
+                popup_e39be377fca6a1e986af694d1c179058.setContent(html_8dcff04ddb943173c02e667670c87eeb);
+            
+        
+
+        marker_e78249782214dda5034fa5d833af1651.bindPopup(popup_e39be377fca6a1e986af694d1c179058)
+        ;
+
+        
+    
+    
+            marker_e78249782214dda5034fa5d833af1651.bindTooltip(
+                `<div>
+                     Sri Sri Samaj Bari Ashram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4c774062d0f55ab9d62d48caab62514c = L.marker(
+                [23.411932835637664, 88.3766556798282],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_40f714d3a4fce08079bdb9b2d3f1b6e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c774062d0f55ab9d62d48caab62514c.setIcon(icon_40f714d3a4fce08079bdb9b2d3f1b6e0);
+        
+    
+        var popup_2121f087b5325e6ab69ab8fbe0706663 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_ede70b0c5e94bfb6fc876b9bfb6630f3 = $(`<div id="html_ede70b0c5e94bfb6fc876b9bfb6630f3" style="width: 100.0%; height: 100.0%;"><strong>Radharani Temple</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 1.09 km</div>`)[0];
+                popup_2121f087b5325e6ab69ab8fbe0706663.setContent(html_ede70b0c5e94bfb6fc876b9bfb6630f3);
+            
+        
+
+        marker_4c774062d0f55ab9d62d48caab62514c.bindPopup(popup_2121f087b5325e6ab69ab8fbe0706663)
+        ;
+
+        
+    
+    
+            marker_4c774062d0f55ab9d62d48caab62514c.bindTooltip(
+                `<div>
+                     Radharani Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b23ed4ea6f78f1c5c884acc1bbc2abe0 = L.marker(
+                [23.412798770793497, 88.36977059887356],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_4560a975557e107c8f9912bba40d971a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b23ed4ea6f78f1c5c884acc1bbc2abe0.setIcon(icon_4560a975557e107c8f9912bba40d971a);
+        
+    
+        var popup_dfa8be32afe0ae417cab848071f2843a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c2ba40e9923bde52d7f0e24fa98d9676 = $(`<div id="html_c2ba40e9923bde52d7f0e24fa98d9676" style="width: 100.0%; height: 100.0%;"><strong>Dhameswar Mahaprabhu Temple</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 0.76 km</div>`)[0];
+                popup_dfa8be32afe0ae417cab848071f2843a.setContent(html_c2ba40e9923bde52d7f0e24fa98d9676);
+            
+        
+
+        marker_b23ed4ea6f78f1c5c884acc1bbc2abe0.bindPopup(popup_dfa8be32afe0ae417cab848071f2843a)
+        ;
+
+        
+    
+    
+            marker_b23ed4ea6f78f1c5c884acc1bbc2abe0.bindTooltip(
+                `<div>
+                     Dhameswar Mahaprabhu Temple
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4bfb78b48367157163fc4077b1c5fb7 = L.marker(
+                [23.425671603005647, 88.37125561293419],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_35f718ae7a50db47e88d9aa28c12e703 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d4bfb78b48367157163fc4077b1c5fb7.setIcon(icon_35f718ae7a50db47e88d9aa28c12e703);
+        
+    
+        var popup_772a39f202dc5ff1e79f8f416b0e02d2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e082f2142ae3d552145abe38f10ad43f = $(`<div id="html_e082f2142ae3d552145abe38f10ad43f" style="width: 100.0%; height: 100.0%;"><strong>Sree Sree Gauranga Mahaprabhu Janmasthan Ashram</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 2.19 km</div>`)[0];
+                popup_772a39f202dc5ff1e79f8f416b0e02d2.setContent(html_e082f2142ae3d552145abe38f10ad43f);
+            
+        
+
+        marker_d4bfb78b48367157163fc4077b1c5fb7.bindPopup(popup_772a39f202dc5ff1e79f8f416b0e02d2)
+        ;
+
+        
+    
+    
+            marker_d4bfb78b48367157163fc4077b1c5fb7.bindTooltip(
+                `<div>
+                     Sree Sree Gauranga Mahaprabhu Janmasthan Ashram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c1793164f320a86c94b581b95c87287 = L.marker(
+                [23.429920199430686, 88.37221247371691],
+                {}
+            ).addTo(marker_cluster_a1726009f776e9ebde93bf6914b0224a);
+        
+    
+            var icon_63ef11698a160698eabd193f5c6eb934 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c1793164f320a86c94b581b95c87287.setIcon(icon_63ef11698a160698eabd193f5c6eb934);
+        
+    
+        var popup_2b2e78e63439fbc46c05a511d8244c2e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f48dd9165c451fc45205f4b92f87b21 = $(`<div id="html_1f48dd9165c451fc45205f4b92f87b21" style="width: 100.0%; height: 100.0%;"><strong>Narahari Dham Ashram</strong><br>Nearest Station: Navadwip Dham Railway Station<br>Distance: 2.67 km</div>`)[0];
+                popup_2b2e78e63439fbc46c05a511d8244c2e.setContent(html_1f48dd9165c451fc45205f4b92f87b21);
+            
+        
+
+        marker_9c1793164f320a86c94b581b95c87287.bindPopup(popup_2b2e78e63439fbc46c05a511d8244c2e)
+        ;
+
+        
+    
+    
+            marker_9c1793164f320a86c94b581b95c87287.bindTooltip(
+                `<div>
+                     Narahari Dham Ashram
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_a1726009f776e9ebde93bf6914b0224a.addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_5f5b081adf247bdc45d343a5e3f8b155 = L.polyline(
+                [[23.4109827507381, 88.36992523728912], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_0b80a39de8b3407ab29725ae3624ad4b = L.polyline(
+                [[23.409289292954742, 88.37232849651893], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_288a6c2542880a2aba98cfb4a3029ce2 = L.polyline(
+                [[23.448788863629407, 88.40329641845587], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_d80a419f5348eb92ad1305ab9479c59e = L.polyline(
+                [[23.399293136292595, 88.36297015573102], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_12a33a14620acd95065890d85de7807a = L.polyline(
+                [[23.391283584096442, 88.3653177763893], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_13050d5684da9119d91cab13a08bf4ba = L.polyline(
+                [[23.40791614064054, 88.37303237143321], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_accab01770eff0dd38f3f4356bc259da = L.polyline(
+                [[23.411932835637664, 88.3766556798282], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_64547db4f249de7b96e3e30830dc77eb = L.polyline(
+                [[23.412798770793497, 88.36977059887356], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_c2a5b968ba204e1c047219ac36d0f943 = L.polyline(
+                [[23.425671603005647, 88.37125561293419], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var poly_line_23595e9a342ae62fb2022abc52b3a11b = L.polyline(
+                [[23.429920199430686, 88.37221247371691], [23.406136, 88.368011]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var marker_7dd27226be18f83e1a245c6d486b2629 = L.marker(
+                [23.406136, 88.368011],
+                {}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var icon_b5e7e561e216f7e1c09de2922654118c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7dd27226be18f83e1a245c6d486b2629.setIcon(icon_b5e7e561e216f7e1c09de2922654118c);
+        
+    
+        var popup_dc2b9fb2d8429eaa668f944d79b12dba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c8536eedc70b68dd680ce3839a4baa5a = $(`<div id="html_c8536eedc70b68dd680ce3839a4baa5a" style="width: 100.0%; height: 100.0%;"><strong>Navadwip Dham Railway Station</strong><br>Poramatala: 0.57 km<br>Sonar Gouranga Temple: 0.56 km<br>Ballal Dhipi: 5.94 km<br>Sri Devananda Gaudiya Math: 0.92 km<br>Sri Chaitanya Saraswat Math (Jal Mandir): 1.67 km<br>Sri Sri Samaj Bari Ashram: 0.55 km<br>Radharani Temple: 1.09 km<br>Dhameswar Mahaprabhu Temple: 0.76 km<br>Sree Sree Gauranga Mahaprabhu Janmasthan Ashram: 2.19 km<br>Narahari Dham Ashram: 2.67 km<br></div>`)[0];
+                popup_dc2b9fb2d8429eaa668f944d79b12dba.setContent(html_c8536eedc70b68dd680ce3839a4baa5a);
+            
+        
+
+        marker_7dd27226be18f83e1a245c6d486b2629.bindPopup(popup_dc2b9fb2d8429eaa668f944d79b12dba)
+        ;
+
+        
+    
+    
+            marker_7dd27226be18f83e1a245c6d486b2629.bindTooltip(
+                `<div>
+                     Navadwip Dham Railway Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9624b9395796821c4ecfdfac3c65a475 = L.marker(
+                [23.405725, 88.490037],
+                {}
+            ).addTo(map_94f1bcaaa4cfc9584cf2702b4ff05170);
+        
+    
+            var icon_71df35c47292525d0d0f52660c723d0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "train", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9624b9395796821c4ecfdfac3c65a475.setIcon(icon_71df35c47292525d0d0f52660c723d0e);
+        
+    
+        var popup_c412276541563075e326c62a4c42b648 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fb8af5386e6dca043b11b7ad47073ba5 = $(`<div id="html_fb8af5386e6dca043b11b7ad47073ba5" style="width: 100.0%; height: 100.0%;"><strong>Krishnanagar City Junction</strong><br>Poramatala: 12.29 km<br>Sonar Gouranga Temple: 12.04 km<br>Ballal Dhipi: 10.07 km<br>Sri Devananda Gaudiya Math: 13.01 km<br>Sri Chaitanya Saraswat Math (Jal Mandir): 12.85 km<br>Sri Sri Samaj Bari Ashram: 11.96 km<br>Radharani Temple: 11.61 km<br>Dhameswar Mahaprabhu Temple: 12.32 km<br>Sree Sree Gauranga Mahaprabhu Janmasthan Ashram: 12.34 km<br>Narahari Dham Ashram: 12.34 km<br></div>`)[0];
+                popup_c412276541563075e326c62a4c42b648.setContent(html_fb8af5386e6dca043b11b7ad47073ba5);
+            
+        
+
+        marker_9624b9395796821c4ecfdfac3c65a475.bindPopup(popup_c412276541563075e326c62a4c42b648)
+        ;
+
+        
+    
+    
+            marker_9624b9395796821c4ecfdfac3c65a475.bindTooltip(
+                `<div>
+                     Krishnanagar City Junction
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
